@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width ,initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!------------ font awesome script --------->
+    <script
+      src="https://kit.fontawesome.com/9beca5b85b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!------------ navbar --------->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="header-row" onclick="connectWallet()">
+            <img src="images/dapp.png" class="dapp" />
+
+            <div class="web3">
+              <a href="#buy-me">Buy me a coffee</a>
+            </div>
+          </div>
+
+          <ul id="sidemenu">
+            <li>
+              <a href="#header"> Home</a>
+            </li>
+            <li>
+              <a href="#about"> About</a>
+            </li>
+            <li>
+              <a href="#services"> Service</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <!------------ header with photo --------->
+        <div class="header-container">
+          <img src="images/profile.jpg" class="profile" />
+          <div class="header-text">
+            <h1>Hi, 👋🏻<br /><span>I'm Ayo</span> Solomon.</h1>
+            <h2>Blockchain Engineer</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ about --------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/body.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="text-body">
+              Mobile Applications developer with 3years of professional
+              experience using Flutter and Android native. Blockchain developer
+              with 2years experience building DEFI and CeFi Dapps, knowledgeable
+              in web3 identity management, Solidity and Rust smart contract
+              programming. Senior Software development skills on Nodejs, mongoDb
+              , Postgres, Graphql, Typescript, Golang, JavaScript, Java, Kotlin,
+              Dart, Rust, AWS, Azure AD!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designer web/App interfaces</li>
+                <li>
+                  <span>Web Application</span><br />Designer web/App interfaces
+                </li>
+                <li>
+                  <span>Mobile Application</span><br />Building Android/IOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - current</span><br />Blockchain and Back-End engineer<br />Cashflakes.xyz
+                </li>
+                <li>
+                  <span>Web Application</span><br />Designer web/App interfaces
+                </li>
+                <li>
+                  <span>Mobile Application</span><br />Building Android/IOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018-2024</span><br />BSC. Mathematics</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="about-col-3"></div>
+          <div class="about-col-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ Services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p1 class="services-body">
+              This function is for switching the contents in the about section
+              by hiding its properties when user clicks on any tablinks
+            </p1>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p1
+              >This function is for switching the contents in the about section
+              by hidingits properties when user clicks on any tablinks
+            </p1>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Application Development</h2>
+            <p1>
+              This function is for switching the contents in the about section
+              by hiding its properties when user clicks on any tablinks
+            </p1>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ portfolio --------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/body.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to illibro flomarge of dexter laboratory
+                sha
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/body.jpg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to illibro flomarge of dexter laboratory
+                sha
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/body.jpg" />
+            <div class="layer">
+              <h3>Online Media App</h3>
+              <p>
+                The app connects you to illibro flomarge of dexter laboratory
+                sha
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more </a>
+      </div>
+    </div>
+
+    <!------------ swift tabs function --------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>ayoseunsolomon@gmail.com</p>
+            <p>+2349078099974</p>
+            <div class="social-icons">
+              <a href="https://whatsapp.me/09078099974"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/aave.png" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input
+                type="text"
+                name="Name"
+                placeholder="enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="enter your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your mesage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">hello</span>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="buy-me">
+    <div class="buy-me-body">
+      <form>
+        <h4>Buy Me A Coffee</h4>
+        <input type="text" name="email" required/>
+        <p>Drop a message</p>
+        <textarea  name="Message"
+        rows="6"
+        placeholder="Your mesage">
+
+        </textarea>
+      </form>
+    </div>
+
+     
+    </div>
+
+
+
+
+
+
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2022 Ayo Solomon. Made with 💕 and a passion to build
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <!------------ swift tabs function --------->
+    <script>
+      /**
+       * This function is for switching the contents in the about section by hiding
+       * its properties when user clicks on any tablinks
+       */
+
+      //this varaible is to call the tablink html view
+      var tablinks = document.getElementsByClassName("tab-links");
+      //this varaible is to call the tabcontent html contents
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      //thsi openTab function accepts tabname as parameter
+      function openTab(tabData) {
+        //this for loop will loop through all the tablinks and
+        //remove activelinks when the function is called
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        //this for loop will loop through all the tabcontents and
+        //remove activetabs when the function is called
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        //when the function is called this event adds the active link tag to the clicked content
+        event.currentTarget.classList.add("active-link");
+        //this will pass the element name to the id and
+        //pass active tab to that clicked tab then display the contents
+        document.getElementById(tabData).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      //this variable reference the sidemenu div
+      var sidemenu = document.getElementById("sidemenu");
+      //this function will open the side menu to reveal the navigations on mobile view
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      //this function will close the side menu to hide the navigations on mobile view
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+   <!------------ buy me a coffee function --------->
+<script>
+
+
+  /**
+   * Create a variable here that holds the contract address after you deploy!
+   */
+  const contractAddress = "0x62c6749A62401760A8b767AA487B7c0eCA8E4E2C";
+
+  /**
+   * Create a variable here that references the abi content!
+   */
+  const contractABI = abi.abi;
+
+  /*
+   * Just a state variable we use to store our user's public wallet.
+   */
+  const [currentAccount, setCurrentAccount] = useState("");
+
+  const [message, setMessage] = useState("");
+
+  const [name, setName] = useState("");
+
+  /*
+   * All state property to store the coffee data.
+   */
+
+
+  const checkIfWalletIsConnected = async () => {
+    try {
+      const { ethereum } = window;
+
+      /*
+       * Check if we're authorized to access the user's wallet
+       */
+      const accounts = await ethereum.request({ method: "eth_accounts" });
+
+      if (accounts.length !== 0) {
+        const account = accounts[0];
+        setCurrentAccount(account);
+        toast.success("🦄 Wallet is Connected", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        toast.warn("Make sure you have MetaMask Connected", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    } catch (error) {
+      toast.error(`${error.message}`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
+  /**
+   * Implement your connectWallet method here
+   */
+  const connectWallet = async () => {
+    try {
+      const { ethereum } = window;
+
+      if (!ethereum) {
+        toast.warn("Make sure you have MetaMask Connected", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        return;
+      }
+
+      const accounts = await ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      setCurrentAccount(accounts[0]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const buyCoffee = async () => {
+    try {
+      const { ethereum } = window;
+
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        const coffeePortalContract = new ethers.Contract(
+          contractAddress,
+          contractABI,
+          signer
+        );
+
+        let count = await coffeePortalContract.getTotalCoffee();
+        console.log("Retrieved total coffee count...", count.toNumber());
+
+        /*
+         * Execute the actual coffee gift from your smart contract
+         */
+        const coffeeTxn = await coffeePortalContract.buyCoffee(
+          message ? message : "Enjoy Your Coffee",
+          name ? name : "Anonymous",
+          ethers.utils.parseEther("0.001"),
+          {
+            gasLimit: 300000,
+          }
+        );
+        console.log("Mining...", coffeeTxn.hash);
+
+        toast.info("Sending Fund for coffee...", {
+          position: "top-left",
+          autoClose: 18050,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        await coffeeTxn.wait();
+
+        console.log("Mined -- ", coffeeTxn.hash);
+
+        count = await coffeePortalContract.getTotalCoffee();
+
+        console.log("Retrieved total coffee count...", count.toNumber());
+
+        setMessage("");
+        setName("");
+
+        toast.success("Coffee Purchased!", {
+          position: "top-left",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        console.log("Ethereum object doesn't exist!");
+      }
+    } catch (error) {
+      toast.error(`${error.message}`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
+  };
+
+  /*
+   * Create a method that gets all coffee from your contract
+   */
+  const getAllCoffee = async () => {
+    try {
+      const { ethereum } = window;
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        const coffeePortalContract = new ethers.Contract(
+          contractAddress,
+          contractABI,
+          signer
+        );
+
+        /*
+         * Call the getAllCoffee method from your Smart Contract
+         */
+        const coffees = await coffeePortalContract.getAllCoffee();
+
+        /*
+         * We only need address, timestamp, name, and message in our UI so let's
+         * pick those out
+         */
+        const coffeeCleaned = coffees.map((coffee) => {
+          return {
+            address: coffee.giver,
+            timestamp: new Date(coffee.timestamp * 1000),
+            message: coffee.message,
+            name: coffee.name,
+          };
+        });
+
+        /*
+         * Store our data in React State
+         */
+        setAllCoffee(coffeeCleaned);
+      } else {
+        console.log("Ethereum object doesn't exist!");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  /*
+   * This runs our function when the page loads.
+   */
+
+    let coffeePortalContract;
+    getAllCoffee();
+    checkIfWalletIsConnected();
+
+    const onNewCoffee = (from, timestamp, message, name) => {
+      console.log("NewCoffee", from, timestamp, message, name);
+      setAllCoffee((prevState) => [
+        ...prevState,
+        {
+          address: from,
+          timestamp: new Date(timestamp * 1000),
+          message: message,
+          name: name,
+        },
+      ]);
+    };
+
+    if (window.ethereum) {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+
+      coffeePortalContract = new ethers.Contract(
+        contractAddress,
+        contractABI,
+        signer
+      );
+      coffeePortalContract.on("NewCoffee", onNewCoffee);
+    }
+
+    return () => {
+      if (coffeePortalContract) {
+        coffeePortalContract.off("NewCoffee", onNewCoffee);
+      }
+    };
+
+
+  const handleOnMessageChange = (event) => {
+    const { value } = event.target;
+    setMessage(value);
+  };
+  const handleOnNameChange = (event) => {
+    const { value } = event.target;
+    setName(value);
+  };
+
+
+</script>
+  </body>
+</html>
