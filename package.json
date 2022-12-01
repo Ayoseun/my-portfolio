@@ -1,4 +1,4 @@
-{
+{  "main": "index.html",
   "dependencies": {
     "ethers": "^5.7.2"
   }
