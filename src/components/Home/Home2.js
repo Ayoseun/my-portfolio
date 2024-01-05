@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="red"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-             I am a seasoned software engineer with a diverse professional background, having successfully navigated projects across the continents of Africa, Latin America, and the USA
+             I am a seasoneD software engineer with a diverse professional background, having successfully navigated projects across the continents of Africa, Latin America, and the USA
               <br />
               <br />My expertise extends to proficiency in six programming languages, enabling me to adapt seamlessly to a variety of technological landscapes. building with
               <i>
